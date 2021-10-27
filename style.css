@@ -1,0 +1,119 @@
+html{
+    font-family: 'Vazir' , sans-serif;
+}
+
+body{
+    background-color: #34495e;
+    margin: 0px;
+}
+
+header{
+    height: 180px;
+    text-align: center;
+    line-height: 160px;
+}
+
+h1{
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*-----Sliders-----*/
+
+#sliders{
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+
+#sliders .next:hover,
+#sliders .prev:hover {
+    background-color: #27ae60;
+    color: #c0392b;
+    font-weight: 900;
+    font-size: 20px;
+}
+#sliders .next,
+#sliders .prev {
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ecf0f1;
+    padding: 5px 15px;
+    border-radius: 4px 0 0 4px;
+    user-select: none;
+    transition: .5S ease;
+}
+
+#sliders .next {
+    top: 50%;
+    right: 0;
+}
+
+#sliders .prev {
+    top: 50%;
+    left: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.slider{
+    display: none;
+    position: relative;
+}
+
+.slider.active{
+    display: block;
+}
+
+.slider .slider-number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background-color: #95a5a6;
+    color: #ecf0f1;
+    font-size: 12px;
+    font-weight: bold;   
+}
+
+.slider .silder-text{
+    text-align: center;
+    padding: 8 px 12 px;
+    font-size: 15px;
+    width: 100%;
+    color: #ecf0f1;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* ---dots--- */
+.dots{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dots .dot{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(189, 195, 199,1.0);
+    margin-right: 10px;
+    transition: background-color .6s ease;
+}
+
+.dots .dot:hover{
+    cursor: pointer;
+    background-color: #27ae60;
+}
+
+.dots .dot.active{
+    background-color: #27ae60;
+}
